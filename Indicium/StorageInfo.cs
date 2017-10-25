@@ -51,10 +51,7 @@ namespace Indicium
                     Disks.Add(disk);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("DiskInfo error: " + error.Message);
-            }
+            catch { }
 
             try
             {
@@ -92,10 +89,7 @@ namespace Indicium
                     
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("VolumeInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<Disk> Disks = new List<Disk>();

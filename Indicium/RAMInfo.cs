@@ -48,10 +48,7 @@ namespace Indicium
                     Modules.Add(module);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("RAMInfo error: " + error.Message);
-            }
+            catch { }
 
             try
             {
@@ -63,10 +60,7 @@ namespace Indicium
                     VirtualMemory.UsedVirtualMemory = VirtualMemory.TotalVirtualMemory.Subtract(VirtualMemory.AvailableVirtualMemory);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("RAMInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<RAM> Modules = new List<RAM>();

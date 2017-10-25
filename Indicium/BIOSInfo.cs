@@ -24,10 +24,7 @@ namespace Indicium
                     //ReleaseDate = DateTime.Parse(mo.Properties["ReleaseDate"].Value.ToString());
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("BIOSInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public string Name { get; set; }

@@ -43,10 +43,7 @@ namespace Indicium
                             mobo.Chipset = Convert.ToString(mo2.Properties["Description"].Value);
                         }
                     }
-                    catch //(Exception error)
-                    {
-                        //MessageBox.Show("MotherboardInfo error: " + error.Message);
-                    }
+                    catch { }
 
                     try
                     {
@@ -56,10 +53,7 @@ namespace Indicium
                             mobo.Revision = Convert.ToString(mo3.Properties["RevisionNumber"].Value);
                         }
                     }
-                    catch //(Exception error)
-                    {
-                        //MessageBox.Show("MotherboardInfo error: " + error.Message);
-                    }
+                    catch { }
 
                     try
                     {
@@ -69,18 +63,12 @@ namespace Indicium
                             mobo.SystemModel = Convert.ToString(mo4.Properties["Model"].Value);
                         }
                     }
-                    catch //(Exception error)
-                    {
-                        //MessageBox.Show("BIOSInfo error: " + error.Message);
-                    }
+                    catch { }
 
                     Boards.Add(mobo);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("MotherboardInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<Motherboard> Boards = new List<Motherboard>();

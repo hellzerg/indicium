@@ -98,6 +98,12 @@ namespace Indicium
                 (Environment.OSVersion.Version.Major > 6);
 
             var productKey = isWin8OrUp ? DecodeProductKey(digitalProductId) : DecodeProductKey(digitalProductId);
+
+            if (productKey.Count() > 29)
+            {
+                productKey = productKey.Substring(0, 29);
+            }
+
             return productKey;
         }
     }

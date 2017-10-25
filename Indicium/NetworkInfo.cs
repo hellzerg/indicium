@@ -47,10 +47,7 @@ namespace Indicium
                     }
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("NetworkInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<NetworkAdapter> PhysicalAdapters = new List<NetworkAdapter>();

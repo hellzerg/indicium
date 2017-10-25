@@ -54,10 +54,7 @@ namespace Indicium
                     Keyboards.Add(keyboard);
                 }
             }
-            catch//(Exception error)
-            {
-                //MessageBox.Show("KeyboardInfo error: " + error.Message);
-            }
+            catch { }
 
             try
             {
@@ -81,10 +78,7 @@ namespace Indicium
                     PointingDevices.Add(pointingDevice);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("KeyboardInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<Keyboard> Keyboards = new List<Keyboard>();

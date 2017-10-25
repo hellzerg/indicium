@@ -53,18 +53,12 @@ namespace Indicium
                             cpu.DataExecutionPrevention = (temp2) ? "Yes" : "No";
                         }
                     }
-                    catch //(Exception error)
-                    {
-                        //MessageBox.Show("RAMInfo error: " + error.Message);
-                    }
+                    catch { }
 
                     CPUs.Add(cpu);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("CPUInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<CPU> CPUs = new List<CPU>();

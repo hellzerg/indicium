@@ -33,10 +33,7 @@ namespace Indicium
                     AudioDevices.Add(device);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("AudioInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<AudioDevice> AudioDevices = new List<AudioDevice>();

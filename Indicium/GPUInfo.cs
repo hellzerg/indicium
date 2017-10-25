@@ -42,10 +42,7 @@ namespace Indicium
                     GPUs.Add(gpu);
                 }
             }
-            catch //(Exception error)
-            {
-                //MessageBox.Show("GPUInfo error: " + error.Message);
-            }
+            catch { }
         }
 
         public List<GPU> GPUs = new List<GPU>();
