@@ -11,9 +11,9 @@ using System.Diagnostics;
 
 namespace Indicium
 {
-    public partial class About : Form
+    public partial class AboutForm : Form
     {
-        public About()
+        public AboutForm()
         {
             InitializeComponent();
             Options.ApplyTheme(this);

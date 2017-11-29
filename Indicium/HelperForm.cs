@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Indicium
 {
-    public partial class Messager : Form
+    public partial class HelperForm : Form
     {
-        public Messager(string s)
+        public HelperForm(string s)
         {
             InitializeComponent();
             Options.ApplyTheme(this);

@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9] - 2017-11-29
+- Improved CPU detection
+
 ## [1.8] - 2017-04-08
 - Fixed Windows product key detection
 

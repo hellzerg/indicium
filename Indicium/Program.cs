@@ -18,7 +18,7 @@ namespace Indicium
 
         // Enter current version here
         internal readonly static float Major = 1;
-        internal readonly static float Minor = 8;
+        internal readonly static float Minor = 9;
 
         /* END OF VERSION PROPERTIES */
 
@@ -66,7 +66,7 @@ namespace Indicium
 
             if (IsAdmin() == false)
             {
-                Messager f = new Messager(noadminmsg);
+                HelperForm f = new HelperForm(noadminmsg);
                 f.ShowDialog();
 
                 Application.Exit();
@@ -82,11 +82,11 @@ namespace Indicium
                     // load settings, if there is no settings, load defaults
                     Options.LoadSettings();
 
-                    Application.Run(new Main());
+                    Application.Run(new MainForm());
                 }
                 else
                 {
-                    Messager f = new Messager(unsupportedmsg);
+                    HelperForm f = new HelperForm(unsupportedmsg);
                     f.ShowDialog();
 
                     Application.Exit();

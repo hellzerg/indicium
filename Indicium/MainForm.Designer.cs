@@ -1,6 +1,6 @@
 ﻿namespace Indicium
 {
-    partial class Main
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Keyboards");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Pointing Devices");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Physical Adapters");

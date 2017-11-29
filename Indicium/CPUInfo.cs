@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Management;
 using System.Windows.Forms;
+using Microsoft.Win32;
 
 namespace Indicium
 {
@@ -55,6 +56,8 @@ namespace Indicium
                     }
                     catch { }
 
+                    if (string.IsNullOrEmpty(cpu.Name)) cpu.Name = GetCPUNameAlternative();
+
                     CPUs.Add(cpu);
                 }
             }
@@ -62,5 +65,13 @@ namespace Indicium
         }
 
         public List<CPU> CPUs = new List<CPU>();
+
+        private string GetCPUNameAlternative()
+        {
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(@"HARDWARE\DESCRIPTION\System\CentralProcessor\0", false))
+            {
+                return key.GetValue("ProcessorNameString").ToString();
+            }
+        }
     }
 }

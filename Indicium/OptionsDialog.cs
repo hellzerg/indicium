@@ -12,7 +12,7 @@ namespace Indicium
 {
     public partial class OptionsDialog : Form
     {
-        Main _main;
+        MainForm _main;
 
         private void LoadSettings()
         {
@@ -39,7 +39,7 @@ namespace Indicium
             }
         }
 
-        public OptionsDialog(Main main)
+        public OptionsDialog(MainForm main)
         {
             InitializeComponent();
             _main = main;

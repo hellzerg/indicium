@@ -1,6 +1,6 @@
 ﻿namespace Indicium
 {
-    partial class Messager
+    partial class HelperForm
     {
         /// <summary>
         /// Required designer variable.

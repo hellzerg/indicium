@@ -1,6 +1,6 @@
 ﻿namespace Indicium
 {
-    partial class About
+    partial class AboutForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.t1 = new System.Windows.Forms.Timer(this.components);
             this.t2 = new System.Windows.Forms.Timer(this.components);
             this.button7 = new System.Windows.Forms.Button();

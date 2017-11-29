@@ -14,7 +14,7 @@ using System.Diagnostics;
 
 namespace Indicium
 {
-    public partial class Main : Form
+    public partial class MainForm : Form
     {
         readonly string _ByteSizeNull = " b";
 
@@ -812,7 +812,7 @@ namespace Indicium
             views.Add(PeripheralsView);
         }
 
-        public Main()
+        public MainForm()
         {
             InitializeComponent();
             InitializeViews();
@@ -912,7 +912,7 @@ namespace Indicium
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            About f = new About();
+            AboutForm f = new AboutForm();
             f.ShowDialog(this);
         }
 
