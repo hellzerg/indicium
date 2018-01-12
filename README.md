@@ -24,6 +24,9 @@ It's also capable of recovering Windows product key.
 ## Downloads: ##
 https://github.com/hellzerg/indicium/releases
 
+## Screenshots: ##
+https://github.com/hellzerg/indicium/blob/master/IMAGES.md
+
 ## Compatibility: ##
  
 .NET Framework 4.5.2
