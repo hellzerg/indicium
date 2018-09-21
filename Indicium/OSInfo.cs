@@ -16,6 +16,7 @@ namespace Indicium
         public OSInfo()
         {
             OperatingSystem = Utilities.GetOS();
+
             if (Environment.Is64BitOperatingSystem)
             {
                 SystemType = "64-bit";
@@ -24,7 +25,9 @@ namespace Indicium
             {
                 SystemType = "32-bit";
             }
+
             ProductKey = Utilities.GetProductKey();
+            
             ComputerName = Environment.MachineName;
         }
     }

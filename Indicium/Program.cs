@@ -17,8 +17,8 @@ namespace Indicium
         /* DO NOT LEAVE THEM EMPTY */
 
         // Enter current version here
-        internal readonly static float Major = 1;
-        internal readonly static float Minor = 9;
+        internal readonly static float Major = 2;
+        internal readonly static float Minor = 0;
 
         /* END OF VERSION PROPERTIES */
 

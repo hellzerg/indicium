@@ -11,11 +11,63 @@ using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using System.Net;
 
 namespace Indicium
 {
     public partial class MainForm : Form
     {
+        readonly string _latestVersionLink = "https://raw.githubusercontent.com/hellzerg/indicium/master/version.txt";
+        readonly string _releasesLink = "https://github.com/hellzerg/indicium/releases";
+
+        readonly string _noNewVersionMessage = "You already have the latest version!";
+        readonly string _betaVersionMessage = "You are using an experimental version!";
+
+        private string NewVersionMessage(string latest)
+        {
+            return string.Format("There is a new version available!\n\nLatest version: {0}\nCurrent version: {1}\n\nDo you want to download it now?", latest, Program.GetCurrentVersionToString());
+        }
+
+        private void CheckForUpdate()
+        {
+            WebClient client = new WebClient
+            {
+                Encoding = Encoding.UTF8
+            };
+
+            string latestVersion = string.Empty;
+            try
+            {
+                latestVersion = client.DownloadString(_latestVersionLink);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (!string.IsNullOrEmpty(latestVersion))
+            {
+                if (float.Parse(latestVersion) > Program.GetCurrentVersion())
+                {
+                    if (MessageBox.Show(NewVersionMessage(latestVersion), "Update available", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            Process.Start(_releasesLink);
+                        }
+                        catch { }
+                    }
+                }
+                else if (float.Parse(latestVersion) == Program.GetCurrentVersion())
+                {
+                    MessageBox.Show(_noNewVersionMessage, "No update available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(_betaVersionMessage, "No update available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
         readonly string _ByteSizeNull = " b";
 
         OSInfo osInfo = new OSInfo();
@@ -1140,6 +1192,11 @@ namespace Indicium
             {
                 SummaryView.SelectedNode = e.Node;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CheckForUpdate();
         }
     }
 }

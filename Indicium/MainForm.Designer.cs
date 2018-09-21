@@ -30,24 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Keyboards");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Pointing Devices");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Physical Adapters");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Virtual Adapters");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Disks");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Volumes");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Opticals");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Removables");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Operating System");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("CPUs");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("RAM");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Motherboards");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Graphics");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Storage");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Network");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Audio");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Peripherals");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("BIOS");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Keyboards");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Pointing Devices");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Physical Adapters");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Virtual Adapters");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Disks");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Volumes");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Opticals");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Removables");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Operating System");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("CPUs");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("RAM");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Motherboards");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Graphics");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Storage");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Network");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Audio");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Peripherals");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("BIOS");
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblbitness = new System.Windows.Forms.Label();
             this.lblos = new System.Windows.Forms.Label();
@@ -82,6 +82,7 @@
             this.RAMView = new System.Windows.Forms.TreeView();
             this.CPUView = new System.Windows.Forms.TreeView();
             this.SummaryView = new System.Windows.Forms.TreeView();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -101,17 +102,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 62);
+            this.panel1.Size = new System.Drawing.Size(970, 77);
             this.panel1.TabIndex = 6;
             // 
             // lblbitness
             // 
             this.lblbitness.AutoSize = true;
             this.lblbitness.ForeColor = System.Drawing.Color.Silver;
-            this.lblbitness.Location = new System.Drawing.Point(178, 37);
+            this.lblbitness.Location = new System.Drawing.Point(222, 46);
             this.lblbitness.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblbitness.Name = "lblbitness";
-            this.lblbitness.Size = new System.Drawing.Size(44, 15);
+            this.lblbitness.Size = new System.Drawing.Size(56, 20);
             this.lblbitness.TabIndex = 6;
             this.lblbitness.Text = "bitness";
             // 
@@ -119,10 +120,10 @@
             // 
             this.lblos.AutoSize = true;
             this.lblos.ForeColor = System.Drawing.Color.Silver;
-            this.lblos.Location = new System.Drawing.Point(178, 17);
+            this.lblos.Location = new System.Drawing.Point(222, 21);
             this.lblos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblos.Name = "lblos";
-            this.lblos.Size = new System.Drawing.Size(19, 15);
+            this.lblos.Size = new System.Drawing.Size(24, 20);
             this.lblos.TabIndex = 5;
             this.lblos.Text = "os";
             // 
@@ -130,10 +131,10 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(44, 43);
+            this.pictureBox1.Size = new System.Drawing.Size(55, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -143,10 +144,10 @@
             // 
             this.lblversion.AutoSize = true;
             this.lblversion.ForeColor = System.Drawing.Color.Silver;
-            this.lblversion.Location = new System.Drawing.Point(72, 37);
+            this.lblversion.Location = new System.Drawing.Point(90, 46);
             this.lblversion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblversion.Name = "lblversion";
-            this.lblversion.Size = new System.Drawing.Size(49, 15);
+            this.lblversion.Size = new System.Drawing.Size(64, 20);
             this.lblversion.TabIndex = 4;
             this.lblversion.Text = "Version:";
             // 
@@ -155,16 +156,17 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 7);
+            this.label2.Location = new System.Drawing.Point(88, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
+            this.label2.Size = new System.Drawing.Size(108, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Indicium";
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button7);
@@ -179,10 +181,10 @@
             this.panel2.Controls.Add(this.LinkCPU);
             this.panel2.Controls.Add(this.LinkSummary);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 62);
+            this.panel2.Location = new System.Drawing.Point(0, 77);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(141, 521);
+            this.panel2.Size = new System.Drawing.Size(173, 652);
             this.panel2.TabIndex = 7;
             // 
             // button2
@@ -195,10 +197,10 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(9, 479);
+            this.button2.Location = new System.Drawing.Point(12, 554);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 31);
+            this.button2.Size = new System.Drawing.Size(124, 39);
             this.button2.TabIndex = 69;
             this.button2.Tag = "themeable";
             this.button2.Text = "Theme";
@@ -215,10 +217,10 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(9, 407);
+            this.button1.Location = new System.Drawing.Point(12, 468);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 31);
+            this.button1.Size = new System.Drawing.Size(124, 39);
             this.button1.TabIndex = 68;
             this.button1.Tag = "themeable";
             this.button1.Text = "Screenshot";
@@ -235,10 +237,10 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(9, 443);
+            this.button7.Location = new System.Drawing.Point(12, 511);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(99, 31);
+            this.button7.Size = new System.Drawing.Size(124, 39);
             this.button7.TabIndex = 67;
             this.button7.Tag = "themeable";
             this.button7.Text = "Save as JSON";
@@ -252,10 +254,10 @@
             this.LinkPeripherals.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkPeripherals.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkPeripherals.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkPeripherals.Location = new System.Drawing.Point(9, 189);
+            this.LinkPeripherals.Location = new System.Drawing.Point(11, 236);
             this.LinkPeripherals.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkPeripherals.Name = "LinkPeripherals";
-            this.LinkPeripherals.Size = new System.Drawing.Size(90, 21);
+            this.LinkPeripherals.Size = new System.Drawing.Size(112, 28);
             this.LinkPeripherals.TabIndex = 66;
             this.LinkPeripherals.TabStop = true;
             this.LinkPeripherals.Tag = "themeable";
@@ -270,10 +272,10 @@
             this.LinkBIOS.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkBIOS.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkBIOS.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkBIOS.Location = new System.Drawing.Point(9, 211);
+            this.LinkBIOS.Location = new System.Drawing.Point(11, 264);
             this.LinkBIOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkBIOS.Name = "LinkBIOS";
-            this.LinkBIOS.Size = new System.Drawing.Size(46, 21);
+            this.LinkBIOS.Size = new System.Drawing.Size(56, 28);
             this.LinkBIOS.TabIndex = 61;
             this.LinkBIOS.TabStop = true;
             this.LinkBIOS.Tag = "themeable";
@@ -288,10 +290,10 @@
             this.LinkAudio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkAudio.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkAudio.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkAudio.Location = new System.Drawing.Point(9, 166);
+            this.LinkAudio.Location = new System.Drawing.Point(11, 208);
             this.LinkAudio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkAudio.Name = "LinkAudio";
-            this.LinkAudio.Size = new System.Drawing.Size(54, 21);
+            this.LinkAudio.Size = new System.Drawing.Size(66, 28);
             this.LinkAudio.TabIndex = 60;
             this.LinkAudio.TabStop = true;
             this.LinkAudio.Tag = "themeable";
@@ -306,10 +308,10 @@
             this.LinkNetwork.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkNetwork.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkNetwork.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkNetwork.Location = new System.Drawing.Point(9, 144);
+            this.LinkNetwork.Location = new System.Drawing.Point(11, 180);
             this.LinkNetwork.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkNetwork.Name = "LinkNetwork";
-            this.LinkNetwork.Size = new System.Drawing.Size(73, 21);
+            this.LinkNetwork.Size = new System.Drawing.Size(90, 28);
             this.LinkNetwork.TabIndex = 59;
             this.LinkNetwork.TabStop = true;
             this.LinkNetwork.Tag = "themeable";
@@ -324,10 +326,10 @@
             this.LinkStorage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkStorage.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkStorage.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkStorage.Location = new System.Drawing.Point(9, 122);
+            this.LinkStorage.Location = new System.Drawing.Point(11, 152);
             this.LinkStorage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkStorage.Name = "LinkStorage";
-            this.LinkStorage.Size = new System.Drawing.Size(68, 21);
+            this.LinkStorage.Size = new System.Drawing.Size(81, 28);
             this.LinkStorage.TabIndex = 58;
             this.LinkStorage.TabStop = true;
             this.LinkStorage.Tag = "themeable";
@@ -342,10 +344,10 @@
             this.LinkGPU.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkGPU.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkGPU.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkGPU.Location = new System.Drawing.Point(9, 99);
+            this.LinkGPU.Location = new System.Drawing.Point(11, 124);
             this.LinkGPU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkGPU.Name = "LinkGPU";
-            this.LinkGPU.Size = new System.Drawing.Size(73, 21);
+            this.LinkGPU.Size = new System.Drawing.Size(90, 28);
             this.LinkGPU.TabIndex = 57;
             this.LinkGPU.TabStop = true;
             this.LinkGPU.Tag = "themeable";
@@ -360,10 +362,10 @@
             this.LinkMotherboard.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkMotherboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkMotherboard.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkMotherboard.Location = new System.Drawing.Point(9, 77);
+            this.LinkMotherboard.Location = new System.Drawing.Point(11, 96);
             this.LinkMotherboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkMotherboard.Name = "LinkMotherboard";
-            this.LinkMotherboard.Size = new System.Drawing.Size(116, 21);
+            this.LinkMotherboard.Size = new System.Drawing.Size(141, 28);
             this.LinkMotherboard.TabIndex = 55;
             this.LinkMotherboard.TabStop = true;
             this.LinkMotherboard.Tag = "themeable";
@@ -378,10 +380,10 @@
             this.LinkRAM.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkRAM.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkRAM.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkRAM.Location = new System.Drawing.Point(9, 54);
+            this.LinkRAM.Location = new System.Drawing.Point(11, 68);
             this.LinkRAM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkRAM.Name = "LinkRAM";
-            this.LinkRAM.Size = new System.Drawing.Size(46, 21);
+            this.LinkRAM.Size = new System.Drawing.Size(55, 28);
             this.LinkRAM.TabIndex = 56;
             this.LinkRAM.TabStop = true;
             this.LinkRAM.Tag = "themeable";
@@ -396,10 +398,10 @@
             this.LinkCPU.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkCPU.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkCPU.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LinkCPU.Location = new System.Drawing.Point(9, 32);
+            this.LinkCPU.Location = new System.Drawing.Point(11, 40);
             this.LinkCPU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkCPU.Name = "LinkCPU";
-            this.LinkCPU.Size = new System.Drawing.Size(47, 21);
+            this.LinkCPU.Size = new System.Drawing.Size(59, 28);
             this.LinkCPU.TabIndex = 55;
             this.LinkCPU.TabStop = true;
             this.LinkCPU.Tag = "themeable";
@@ -413,10 +415,10 @@
             this.LinkSummary.AutoSize = true;
             this.LinkSummary.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkSummary.LinkColor = System.Drawing.Color.White;
-            this.LinkSummary.Location = new System.Drawing.Point(9, 10);
+            this.LinkSummary.Location = new System.Drawing.Point(11, 12);
             this.LinkSummary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkSummary.Name = "LinkSummary";
-            this.LinkSummary.Size = new System.Drawing.Size(79, 21);
+            this.LinkSummary.Size = new System.Drawing.Size(99, 28);
             this.LinkSummary.TabIndex = 54;
             this.LinkSummary.TabStop = true;
             this.LinkSummary.Tag = "themeable";
@@ -438,10 +440,10 @@
             this.panel3.Controls.Add(this.CPUView);
             this.panel3.Controls.Add(this.SummaryView);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(141, 62);
+            this.panel3.Location = new System.Drawing.Point(173, 77);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(635, 521);
+            this.panel3.Size = new System.Drawing.Size(797, 652);
             this.panel3.TabIndex = 8;
             // 
             // PeripheralsView
@@ -455,16 +457,16 @@
             this.PeripheralsView.Location = new System.Drawing.Point(0, 0);
             this.PeripheralsView.Margin = new System.Windows.Forms.Padding(2);
             this.PeripheralsView.Name = "PeripheralsView";
-            treeNode1.ForeColor = System.Drawing.Color.White;
-            treeNode1.Name = "rootKeyboard";
-            treeNode1.Tag = "";
-            treeNode1.Text = "Keyboards";
-            treeNode2.Name = "rootPointing";
-            treeNode2.Text = "Pointing Devices";
+            treeNode9.ForeColor = System.Drawing.Color.White;
+            treeNode9.Name = "rootKeyboard";
+            treeNode9.Tag = "";
+            treeNode9.Text = "Keyboards";
+            treeNode10.Name = "rootPointing";
+            treeNode10.Text = "Pointing Devices";
             this.PeripheralsView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            this.PeripheralsView.Size = new System.Drawing.Size(633, 519);
+            treeNode9,
+            treeNode10});
+            this.PeripheralsView.Size = new System.Drawing.Size(795, 650);
             this.PeripheralsView.TabIndex = 21;
             this.PeripheralsView.Visible = false;
             this.PeripheralsView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.PeripheralsView_NodeMouseClick);
@@ -481,14 +483,14 @@
             this.helperMenu.Name = "helperMenu";
             this.helperMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.helperMenu.ShowImageMargin = false;
-            this.helperMenu.Size = new System.Drawing.Size(157, 56);
+            this.helperMenu.Size = new System.Drawing.Size(188, 68);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(187, 32);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
@@ -497,7 +499,7 @@
             this.googleSearchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.googleSearchToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.googleSearchToolStripMenuItem.Name = "googleSearchToolStripMenuItem";
-            this.googleSearchToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.googleSearchToolStripMenuItem.Size = new System.Drawing.Size(187, 32);
             this.googleSearchToolStripMenuItem.Text = "Google Search";
             this.googleSearchToolStripMenuItem.Click += new System.EventHandler(this.googleSearchToolStripMenuItem_Click);
             // 
@@ -512,7 +514,7 @@
             this.BIOSView.Location = new System.Drawing.Point(0, 0);
             this.BIOSView.Margin = new System.Windows.Forms.Padding(2);
             this.BIOSView.Name = "BIOSView";
-            this.BIOSView.Size = new System.Drawing.Size(633, 519);
+            this.BIOSView.Size = new System.Drawing.Size(795, 650);
             this.BIOSView.TabIndex = 20;
             this.BIOSView.Visible = false;
             this.BIOSView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.BIOSView_NodeMouseClick);
@@ -528,7 +530,7 @@
             this.AudioView.Location = new System.Drawing.Point(0, 0);
             this.AudioView.Margin = new System.Windows.Forms.Padding(2);
             this.AudioView.Name = "AudioView";
-            this.AudioView.Size = new System.Drawing.Size(633, 519);
+            this.AudioView.Size = new System.Drawing.Size(795, 650);
             this.AudioView.TabIndex = 19;
             this.AudioView.Visible = false;
             this.AudioView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.AudioView_NodeMouseClick);
@@ -544,18 +546,18 @@
             this.NetworkView.Location = new System.Drawing.Point(0, 0);
             this.NetworkView.Margin = new System.Windows.Forms.Padding(2);
             this.NetworkView.Name = "NetworkView";
-            treeNode3.ForeColor = System.Drawing.Color.White;
-            treeNode3.Name = "rootPhysical";
-            treeNode3.Tag = "";
-            treeNode3.Text = "Physical Adapters";
-            treeNode4.ForeColor = System.Drawing.Color.White;
-            treeNode4.Name = "rootVirtual";
-            treeNode4.Tag = "";
-            treeNode4.Text = "Virtual Adapters";
+            treeNode11.ForeColor = System.Drawing.Color.White;
+            treeNode11.Name = "rootPhysical";
+            treeNode11.Tag = "";
+            treeNode11.Text = "Physical Adapters";
+            treeNode12.ForeColor = System.Drawing.Color.White;
+            treeNode12.Name = "rootVirtual";
+            treeNode12.Tag = "";
+            treeNode12.Text = "Virtual Adapters";
             this.NetworkView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4});
-            this.NetworkView.Size = new System.Drawing.Size(633, 519);
+            treeNode11,
+            treeNode12});
+            this.NetworkView.Size = new System.Drawing.Size(795, 650);
             this.NetworkView.TabIndex = 18;
             this.NetworkView.Visible = false;
             this.NetworkView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.NetworkView_NodeMouseClick);
@@ -571,26 +573,26 @@
             this.StorageView.Location = new System.Drawing.Point(0, 0);
             this.StorageView.Margin = new System.Windows.Forms.Padding(2);
             this.StorageView.Name = "StorageView";
-            treeNode5.ForeColor = System.Drawing.Color.White;
-            treeNode5.Name = "rootDisk";
-            treeNode5.Tag = "";
-            treeNode5.Text = "Disks";
-            treeNode6.ForeColor = System.Drawing.Color.White;
-            treeNode6.Name = "rootVolume";
-            treeNode6.Tag = "";
-            treeNode6.Text = "Volumes";
-            treeNode7.ForeColor = System.Drawing.Color.White;
-            treeNode7.Name = "rootOptical";
-            treeNode7.Text = "Opticals";
-            treeNode8.ForeColor = System.Drawing.Color.White;
-            treeNode8.Name = "rootRemovable";
-            treeNode8.Text = "Removables";
+            treeNode1.ForeColor = System.Drawing.Color.White;
+            treeNode1.Name = "rootDisk";
+            treeNode1.Tag = "";
+            treeNode1.Text = "Disks";
+            treeNode2.ForeColor = System.Drawing.Color.White;
+            treeNode2.Name = "rootVolume";
+            treeNode2.Tag = "";
+            treeNode2.Text = "Volumes";
+            treeNode13.ForeColor = System.Drawing.Color.White;
+            treeNode13.Name = "rootOptical";
+            treeNode13.Text = "Opticals";
+            treeNode14.ForeColor = System.Drawing.Color.White;
+            treeNode14.Name = "rootRemovable";
+            treeNode14.Text = "Removables";
             this.StorageView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8});
-            this.StorageView.Size = new System.Drawing.Size(633, 519);
+            treeNode1,
+            treeNode2,
+            treeNode13,
+            treeNode14});
+            this.StorageView.Size = new System.Drawing.Size(795, 650);
             this.StorageView.TabIndex = 17;
             this.StorageView.Visible = false;
             this.StorageView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.StorageView_NodeMouseClick);
@@ -606,7 +608,7 @@
             this.GraphicsView.Location = new System.Drawing.Point(0, 0);
             this.GraphicsView.Margin = new System.Windows.Forms.Padding(2);
             this.GraphicsView.Name = "GraphicsView";
-            this.GraphicsView.Size = new System.Drawing.Size(633, 519);
+            this.GraphicsView.Size = new System.Drawing.Size(795, 650);
             this.GraphicsView.TabIndex = 16;
             this.GraphicsView.Visible = false;
             this.GraphicsView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.GraphicsView_NodeMouseClick);
@@ -622,7 +624,7 @@
             this.MotherboardView.Location = new System.Drawing.Point(0, 0);
             this.MotherboardView.Margin = new System.Windows.Forms.Padding(2);
             this.MotherboardView.Name = "MotherboardView";
-            this.MotherboardView.Size = new System.Drawing.Size(633, 519);
+            this.MotherboardView.Size = new System.Drawing.Size(795, 650);
             this.MotherboardView.TabIndex = 15;
             this.MotherboardView.Visible = false;
             this.MotherboardView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.MotherboardView_NodeMouseClick);
@@ -638,7 +640,7 @@
             this.RAMView.Location = new System.Drawing.Point(0, 0);
             this.RAMView.Margin = new System.Windows.Forms.Padding(2);
             this.RAMView.Name = "RAMView";
-            this.RAMView.Size = new System.Drawing.Size(633, 519);
+            this.RAMView.Size = new System.Drawing.Size(795, 650);
             this.RAMView.TabIndex = 14;
             this.RAMView.Visible = false;
             this.RAMView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.RAMView_NodeMouseClick);
@@ -654,7 +656,7 @@
             this.CPUView.Location = new System.Drawing.Point(0, 0);
             this.CPUView.Margin = new System.Windows.Forms.Padding(2);
             this.CPUView.Name = "CPUView";
-            this.CPUView.Size = new System.Drawing.Size(633, 519);
+            this.CPUView.Size = new System.Drawing.Size(795, 650);
             this.CPUView.TabIndex = 13;
             this.CPUView.Visible = false;
             this.CPUView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.CPUView_NodeMouseClick);
@@ -670,67 +672,87 @@
             this.SummaryView.Location = new System.Drawing.Point(0, 0);
             this.SummaryView.Margin = new System.Windows.Forms.Padding(2);
             this.SummaryView.Name = "SummaryView";
-            treeNode9.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode9.Name = "rootOS";
-            treeNode9.Tag = "themeable";
-            treeNode9.Text = "Operating System";
-            treeNode10.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode10.Name = "rootCPU";
-            treeNode10.Tag = "themeable";
-            treeNode10.Text = "CPUs";
-            treeNode11.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode11.Name = "rootRAM";
-            treeNode11.Tag = "themeable";
-            treeNode11.Text = "RAM";
-            treeNode12.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode12.Name = "rootMotherboard";
-            treeNode12.Tag = "themeable";
-            treeNode12.Text = "Motherboards";
-            treeNode13.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode13.Name = "rootGPU";
-            treeNode13.Tag = "themeable";
-            treeNode13.Text = "Graphics";
-            treeNode14.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode14.Name = "rootStorage";
-            treeNode14.Tag = "themeable";
-            treeNode14.Text = "Storage";
+            treeNode3.ForeColor = System.Drawing.Color.DodgerBlue;
+            treeNode3.Name = "rootOS";
+            treeNode3.Tag = "themeable";
+            treeNode3.Text = "Operating System";
+            treeNode4.ForeColor = System.Drawing.Color.DodgerBlue;
+            treeNode4.Name = "rootCPU";
+            treeNode4.Tag = "themeable";
+            treeNode4.Text = "CPUs";
             treeNode15.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode15.Name = "rootNetwork";
+            treeNode15.Name = "rootRAM";
             treeNode15.Tag = "themeable";
-            treeNode15.Text = "Network";
+            treeNode15.Text = "RAM";
             treeNode16.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode16.Name = "rootAudio";
+            treeNode16.Name = "rootMotherboard";
             treeNode16.Tag = "themeable";
-            treeNode16.Text = "Audio";
+            treeNode16.Text = "Motherboards";
             treeNode17.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode17.Name = "rootPeripheral";
+            treeNode17.Name = "rootGPU";
             treeNode17.Tag = "themeable";
-            treeNode17.Text = "Peripherals";
+            treeNode17.Text = "Graphics";
             treeNode18.ForeColor = System.Drawing.Color.DodgerBlue;
-            treeNode18.Name = "rootBIOS";
+            treeNode18.Name = "rootStorage";
             treeNode18.Tag = "themeable";
-            treeNode18.Text = "BIOS";
+            treeNode18.Text = "Storage";
+            treeNode19.ForeColor = System.Drawing.Color.DodgerBlue;
+            treeNode19.Name = "rootNetwork";
+            treeNode19.Tag = "themeable";
+            treeNode19.Text = "Network";
+            treeNode20.ForeColor = System.Drawing.Color.DodgerBlue;
+            treeNode20.Name = "rootAudio";
+            treeNode20.Tag = "themeable";
+            treeNode20.Text = "Audio";
+            treeNode21.ForeColor = System.Drawing.Color.DodgerBlue;
+            treeNode21.Name = "rootPeripheral";
+            treeNode21.Tag = "themeable";
+            treeNode21.Text = "Peripherals";
+            treeNode22.ForeColor = System.Drawing.Color.DodgerBlue;
+            treeNode22.Name = "rootBIOS";
+            treeNode22.Tag = "themeable";
+            treeNode22.Text = "BIOS";
             this.SummaryView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
+            treeNode3,
+            treeNode4,
             treeNode15,
             treeNode16,
             treeNode17,
-            treeNode18});
-            this.SummaryView.Size = new System.Drawing.Size(633, 519);
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22});
+            this.SummaryView.Size = new System.Drawing.Size(795, 650);
             this.SummaryView.TabIndex = 12;
             this.SummaryView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.SummaryView_NodeMouseClick);
             // 
-            // Main
+            // button3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(12, 597);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(124, 39);
+            this.button3.TabIndex = 70;
+            this.button3.Tag = "themeable";
+            this.button3.Text = "Update";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(776, 583);
+            this.ClientSize = new System.Drawing.Size(970, 729);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -738,7 +760,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Main";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Indicium";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
@@ -790,6 +812,7 @@
         private System.Windows.Forms.ContextMenuStrip helperMenu;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem googleSearchToolStripMenuItem;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -37,6 +37,6 @@ Does not work with Windows XP or Vista
 
 ## Details: ##
 
-Latest version: 1.9
+Latest version: 2.0
 
-Released: November 29, 2017
+Released: September 21, 2018
